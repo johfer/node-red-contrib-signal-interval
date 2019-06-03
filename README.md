@@ -9,7 +9,7 @@ A pair of signals consists of an **on** signal followed by an **off** signal. Up
     Input:  on--off-----on------------off---
                  |                     |
                  |                     |
-    Output:  interval: 200 ms     interval: 120 ms
+    Output:  interval: 0.2 s     interval: 1.2 s
 
 
 ## Payload format
