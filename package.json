@@ -1,0 +1,33 @@
+{
+	"name": "node-red-contrib-signal-interval",
+	"version": "0.0.1",
+	"description": "Node-RED node to aggregate pairs of signals into intervals",
+	"main": "signal-interval.js",
+	"scripts": {
+		"test": "mocha spec.js --exit",
+		"test-inspect": "mocha --inspect-brk spec.js --timeout 10000 --exit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johfer/node-red-contrib-signal-interval"
+	},
+	"keywords": [
+		"node-red",
+		"interval"
+	],
+	"node-red": {
+		"nodes": {
+			"signal-interval": "signal-interval.js"
+		}
+	},
+	"author": "Johannes Ferber <johannes.ferber@gmail.com>",
+	"license": "MIT",
+	"homepage": "https://github.com/johfer/node-red-contrib-signal-interval",
+	"dependencies": {},
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"mocha": "^6.1.4",
+		"node-red": "^0.20.5",
+		"node-red-node-test-helper": "^0.2.2"
+	}
+}

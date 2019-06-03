@@ -1,0 +1,37 @@
+<script type="text/x-red" data-template-name="signal-interval">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+   	<div class="form-row">
+        <label for="node-input-dummy"><i class="icon-bookmark"></i> Dummy Interval</label>
+        <input type="text" id="node-input-dummy">
+    </div>
+	<div class="form-row">
+        <label for="node-input-cmd"><i class="icon-bookmark"></i> CMD property</label>
+        <input type="text" id="node-input-cmd">
+    </div>
+</script>
+
+
+<script type="text/x-red" data-help-name="signal-interval">
+    <p>A node which aggregates pairs of signals into intervals</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('signal-interval', {
+        category: 'function',
+        color: '#ffffff',
+        defaults: {
+            name: {value: ""},
+            dummy: {value: 300, validate: RED.validators.number()},
+			cmd: {value: 'cmd'}
+        },
+        inputs: 1,
+        outputs: 1,
+        label: function () {
+            return (this.groupaddr || this.name || "signal-interval");
+        }
+    });
+</script>
+
